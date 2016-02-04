@@ -1,0 +1,19 @@
+import javax.swing.*;
+import java.awt.*;
+
+public class TextComponent{
+	public static void main(String[] args){
+		JFrame f= new JFrame("Ventana para Ejemplo");
+		f.setSize(400,300);
+		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		Container cp= f.getContentPane();
+		cp.setLayout(new FlowLayout());
+		JTextField texto= new JTextField(20);	
+		JPasswordField password = new JPasswordField(15); 
+		JTextArea area = new JTextArea("Comp de Texto");
+		cp.add(texto);
+		cp.add(password);
+		cp.add(area);
+		f.setVisible(true);
+	}
+}
